@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Equipo Dinámico</h1>
+    <nav>
+      <ul>
+        <li><a href="#edmundo">Edmundo</a></li>
+        <li><a href="#angel">Angel</a></li>
+        <li><a href="#axel">Axel</a></li>
+        <li><a href="#jonathan">Jonathan</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="edmundo">
+      <article>
+        <img src="img/edmundo.jpg" alt="Foto de Edmundo" />
+        <h2>Edmundo</h2>
+        <p>Enfermero comprometido con el bienestar de las personas. Le apasiona ayudar y aprender constantemente.</p>
+        <button onclick="toggleHobbies('hob-edmundo')">Ver pasatiempos</button>
+        <ul id="hob-edmundo" class="hidden">
+          <li>Lectura médica</li>
+          <li>Senderismo</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="angel">
+      <article>
+        <img src="img/angel.png" alt="Foto de Angel" />
+        <h2>Angel</h2>
+        <p>Apasionado de los videojuegos y la tecnología. Siempre buscando el siguiente desafío digital.</p>
+        <button onclick="toggleHobbies('hob-angel')">Ver pasatiempos</button>
+        <ul id="hob-angel" class="hidden">
+          <li>Gaming competitivo</li>
+          <li>Streaming</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="axel">
+      <article>
+        <img src="img/axel.jpg" alt="Foto de Axel" />
+        <h2>Axel</h2>
+        <p>Skater de corazón y amante del baloncesto. Siempre en movimiento y con buena vibra.</p>
+        <button onclick="toggleHobbies('hob-axel')">Ver pasatiempos</button>
+        <ul id="hob-axel" class="hidden">
+          <li>Skateboarding</li>
+          <li>Baloncesto</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="jonathan">
+      <article>
+        <img src="img/jona.png" alt="Foto de Jonathan" />
+        <h2>Jonathan</h2>
+        <p>Líder natural, con talento para motivar equipos y mucha energía en la cancha.</p>
+        <button onclick="toggleHobbies('hob-jonathan')">Ver pasatiempos</button>
+        <ul id="hob-jonathan" class="hidden">
+          <li>Baloncesto</li>
+          <li>Liderazgo en proyectos</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Equipo Dinámico. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
